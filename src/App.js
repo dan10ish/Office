@@ -3,7 +3,7 @@ import "./App.css";
 import CustomCamera from "./customCamera";
 import Room from "./Room.jsx";
 import { Canvas } from "@react-three/fiber";
-import { useGLTF, Environment } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
 import { motion } from "framer-motion-3d";
 
 export default function App() {
@@ -13,7 +13,7 @@ export default function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 10000);
+    }, 100);
   }, []);
 
   // Fix Height Bug in IOS
@@ -108,7 +108,7 @@ export default function App() {
               position={cameraTarget.position}
               rotation={cameraTarget.rotation}
             />
-            <Environment preset="city" />
+            <spotLight position={[-4, 5, -1]} intensity={2} />
             <Room />
             <Chair
               position={[0, 0.06, 0]}

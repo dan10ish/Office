@@ -104,7 +104,7 @@ export default function Room(props) {
             geometry={nodes.Circle002_4.geometry}
             material={materials.DisplayGlass}
           >
-            <Html
+            {/* <Html
               wrapperClass="laptop"
               position={[-2.5, 0, -3.57]}
               transform
@@ -119,9 +119,9 @@ export default function Room(props) {
                   delay: 3,
                   duration: 0.1,
                 }}
-                src="https://danish.dev/laptop"
+                src="https://danishansari.in"
               />
-            </Html>
+            </Html> */}
           </mesh>
         </motion.group>
       </group>
@@ -226,7 +226,7 @@ export default function Room(props) {
           geometry={nodes.SCREEN.geometry}
           // material={materials["Display.002"]}
         >
-          <Html
+          {/* <Html
             wrapperClass="mobile"
             position={[-0.62, 1.43, 0.05]}
             transform
@@ -241,9 +241,9 @@ export default function Room(props) {
                 delay: 3,
                 duration: 0.1,
               }}
-              src="https://danish.dev/phone"
+              src="https://danishansari.in"
             />
-          </Html>
+          </Html> */}
         </mesh>
         <mesh
           geometry={nodes.VolumeButtons001.geometry}
